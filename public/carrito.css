@@ -1,6 +1,7 @@
 .contenedor-carrito{
     display: flex;
     height: 74vh;
+    background-color: #80808047;
 }
 
 .carrito{
@@ -9,25 +10,71 @@
     justify-content: space-around;
     align-items: center;
 }
+.imagen-carrito{
+    
+    width: 100%;
+    border-radius: 7px;
+    
+}
 .carrito-libro{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 20%;
-    height: 100%;
+    width: 32%;
+    height: 93%;
 }
 .carrito-titulo{
-    border: 1px solid black;
-    padding: 10px;
-    margin-bottom: 10px;
+    border: 1px solid #0c0c0c1f;
+    border-radius: 7px;
+    
     width: 168px;
 
 }
+.carrito-parrafo-stock,.carrito-parrafo-precio,.carrito-titulo-libro,.carrito-select,.btn-carrito-2,.carrito-select{
+    margin: 10px;
+}
+.carrito-form-1{
+    
+    height: 9%;
+    
+}
+.carrito-form-2{
+    
+    height: 8%;
+    
+}
+.btn-carrito-1{
+    width: 68%;
+    height: 59%;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-carrito-2{
+    width: 40%;
+    height: 59%;
+    background-color: #ffff0066;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.carrito-select{
+    
+    border-radius: 9px;
+    border: none;
+    background-color: #0000001a;
+    cursor: pointer;
+    
+}
+
 .carrito-carrito{
     display: flex;
     justify-content:space-evenly ;
     flex-wrap: wrap;
     width: 35%;
+    height: 69%;
    
 
 
@@ -43,6 +90,19 @@
 .posicion.libro{
     width: 28%;
 }
-.descripcion-libro{
+.carrito-ancla {
+    display: flex;
+    align-items: flex-end;
+    width: 11%;
+    margin-bottom: 2%;
+}
+.ancla{
+ 
+    text-decoration: none;
+    background-color: white;
+    color: blue;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 11px;
     
 }

@@ -1,14 +1,17 @@
 <%- include('head') %>
 <%- include('header') %>
 
-<div class="container-comprar container">
-  <h1>Resultados de búsqueda de libros</h1>
+<div class="container-comprar-container">
+  
   <% if (libros.length > 0) { %>
     <div class="libros-container">
       <% libros.forEach((libro) => { %>
         <div class="book">
+         <div class="contenedor-imagen-compra">
+          <a href="/libro/<%= libro._id %>"><img class="compra-imagen" src="<%= libro.imagen %>" alt="Tapa del libro"></a>
+         </div>
+
           <h2><%= libro.titulo %></h2>
-          <a href="/libro/<%= libro._id %>"><img src="<%= libro.imagen %>" alt="Tapa del libro"></a>
           <p>Autor: <%= libro.autor %></p>
           <% if (libro.precio !== undefined) { %>
             <p>Precio: $<%= libro.precio %></p>
